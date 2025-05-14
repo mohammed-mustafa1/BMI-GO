@@ -1,16 +1,35 @@
-# bmi_go
+# 🧮 BMIGO 
+A simple and elegant Flutter application that allows users to calculate their **Body Mass Index (BMI)** based on height, weight, age, and gender.
 
-A new Flutter project.
+---
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- 🚻 Gender selection (Male / Female)
+- 📏 Adjustable height slider
+- ⚖️ Weight and age input with increment/decrement buttons
+- 📊 Real-time BMI calculation
+- 💬 Descriptive result with interpretation
+- 🔁 Recalculate button to try different values
+- 🌙 Modern dark-themed interface
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠 Built With
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter**
+- **Dart**
+- Custom widgets using:
+  - `StatefulWidget`
+  - `GestureDetector`
+  - `Card`, `Slider`, `Expanded`, `Column`, `Row`, and more
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohammed-mustafa1/bmi-calculator-flutter.git
