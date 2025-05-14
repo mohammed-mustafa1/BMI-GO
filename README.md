@@ -25,6 +25,8 @@ A simple and elegant Flutter application that allows users to calculate their **
   - `Card`, `Slider`, `Expanded`, `Column`, `Row`, and more
 
 ---
+![Home Screen](assets/bmi.jpeg)
+
 
 ## 🚀 Getting Started
 
