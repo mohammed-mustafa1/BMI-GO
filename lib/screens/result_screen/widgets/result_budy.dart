@@ -37,29 +37,27 @@ class ResultBody extends StatelessWidget {
                   ),
                   Text(
                     bmi.toStringAsFixed(2),
-                    style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 42,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  Text(
-                      'Your body weight is absolutely ${getBmiCategory(bmi)},Good job',
-                      style: TextStyle(fontSize: 18)),
+                  Text(getBmiDescription(bmi), style: TextStyle(fontSize: 18)),
                 ],
               ),
             ),
           ),
           SizedBox(height: 16),
           CustomButton(
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+            },
           ),
         ],
       ),
     );
   }
 }
-
-// under weight <18.5
-// normal weight 18.5-24.9
-// overweight 25-29.9
-// obese >30
 
 String getBmiCategory(double bmi) {
   if (bmi < 18.5) {
@@ -70,5 +68,17 @@ String getBmiCategory(double bmi) {
     return 'Overweight';
   } else {
     return 'Obese';
+  }
+}
+
+String getBmiDescription(double bmi) {
+  if (bmi < 18.5) {
+    return 'You are underweight, you should eat more!';
+  } else if (bmi >= 18.5 && bmi <= 24.9) {
+    return 'You are normal, good job!';
+  } else if (bmi >= 25 && bmi <= 29.9) {
+    return 'You are overweight, you should exercise more!';
+  } else {
+    return 'You are obese, you should exercise more and eat less!';
   }
 }
