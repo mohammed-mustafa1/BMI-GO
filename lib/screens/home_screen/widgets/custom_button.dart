@@ -4,8 +4,10 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.onTap,
+    required this.text,
   });
   final Function()? onTap;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -19,7 +21,7 @@ class CustomButton extends StatelessWidget {
           ),
           onPressed: onTap,
           child: Text(
-            'Calculate',
+            text,
             style: TextStyle(fontSize: 18, color: Colors.white),
           )),
     );

@@ -49,6 +49,7 @@ class ResultBody extends StatelessWidget {
           ),
           SizedBox(height: 16),
           CustomButton(
+            text: 'Recalculate',
             onTap: () {
               Navigator.pop(context);
             },

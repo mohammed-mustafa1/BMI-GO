@@ -92,6 +92,7 @@ class _HomeBodyState extends State<HomeBody> {
           SizedBox(height: 16),
           // Calculate Button
           CustomButton(
+            text: 'Calculate',
             onTap: () {
               double bmi = weight / ((height / 100) * (height / 100));
               Navigator.push(
